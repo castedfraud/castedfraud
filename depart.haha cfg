@@ -1,0 +1,158 @@
+-- creds jairo n jay depart.haha on top discord.gg/deprt
+script_key = "wVbrjEOAGPGtHsdqiYPvYEdwDSwbPZuB" -- key goes here
+getgenv().skibidi_script_key = script_key;
+
+getgenv().Depart = {
+    ['Intro'] = {
+        ['Activated'] = true,
+        ['Mode'] = "1"
+    },
+    ['Binding'] = {
+        ['Turn'] = 'Z', 
+        ['Aimbot'] = 'C',
+        ['Resolver'] = 'G',
+        ['Macro'] = 'L',
+        ['TriggerBot'] = 'T',
+        ['SpamToggle'] = 'X'
+    },
+    ['Macro'] = {
+        ['Activated'] = false,
+        ['Mode'] = "kb",
+        ['Speed'] = 0.001
+    },
+    ['Fighting'] = {
+        ['AimAssist'] = {
+            ['StickyAim'] = true,
+            ['ActivateAimbot'] = true,
+            ['TargetParts'] = 'HumanoidRootPart',
+            ['Prediction'] = 0.16874,
+            ['CameraSmoothness'] = 0.3,
+            ['SpamToggle'] = false,
+            ['SpamSpeed'] = 0.99, -- 0.01 is the fastest and 1 is the slowest
+        },
+        ['AimbotAirSection'] = {
+            ['ActivateAirBornePrediction'] = true,
+            ['AirBorneParts'] = 'Head',
+            ['AirBorneSmoothness'] = 0.3,
+            ['AirShotPrediction'] = 0.16874
+        },
+        ['AimbotShake'] = {
+            ['Activated'] = false,
+            ['Values'] = {
+                ['Number'] = 10
+            }
+        },
+        ['AimPointMultipleHitParts'] = {
+            ['Activated'] = false,
+            ['Multi'] = {'Head', 'HumanoidRootPart', 'UpperTorso', 'LowerTorso'}
+        },
+        ['AimPoint'] = {
+            ['Activated'] = false,
+            ['Prediction'] = 2,
+            ['Parts'] = 'HumanoidRootPart',
+            ['AirBorneParts'] = 'Head',
+            ['AutoPrediction'] = {
+                ['Enabled'] = true,
+                ['Ping Prediction'] = {
+                    ['140 150'] = 0.134,
+                    ['130 140'] = 0.132,
+                    ['120 130'] = 0.129854,
+                    ['110 120'] = 0.128925,
+                    ['100 110'] = 0.1282215,
+                    ['90 100'] = 0.13015,
+                    ['80 90'] = 0.12767,
+                    ['70 80'] = 0.12644,
+                    ['60 70'] = 0.1255,
+                    ['50 60'] = 0.1205,
+                    ['40 50'] = 0.116988,
+                    ['30 40'] = 0.11655,
+                    ['20-30'] = 0.116,
+                }
+            },
+            ['Offsets'] = {
+                ['Jump'] = {-2.50},
+                ['Fall'] = {0}
+            }
+        },
+        ['SilentAim'] = {
+            ['Activated'] = true,
+            ['Prediction'] = 0.16874,
+            ['NearestPoint'] = true,
+            ['SoloParts'] = "HumanoidRootPart",
+            ['AirBorneParts'] = "HumanoidRootPart",
+            ['AntiGroundShots'] = {
+                ['Activated'] = true,
+                ['Threshold'] = 4,
+            },
+            ['AntiCurve'] = {
+                ['Enabled'] = false,
+                ['Values'] = 5,
+            },
+            ['Fov'] = {
+                ['Visuals'] = false,
+                ['FovType'] = "Mouse",
+                ['Thickness'] = 1,
+                ['Radius'] = 500,
+                ['Color'] = Color3.fromRGB(255, 255, 255),
+                ['Transparency'] = 0.07,
+                ['Visible'] = false,
+            },
+        }
+    },
+    ['TriggerBot'] = {
+        ['Notification'] = true,
+        ['Activated'] = true,
+        ['Prediction'] = 0.1201,
+        ['Cooldown1'] = 0.01,
+        ['Cooldown2'] = 0.01,
+        ['Interval'] = 1,
+        ['Tolerance'] = 10,
+        ['NearestPart'] = true,
+        ['WhitelistedGun'] = {
+            '[Revolver]',
+            '[Double-Barrel SG]',
+            '[TacticalShotgun]',
+            '[Shotgun]',
+            '[Glock Silencer]',
+            '[DoubleBarrel]'
+        },
+        ['Fov'] = {
+            ['Activate'] = true,
+            ['Filled'] = false,
+            ['Visible'] = false,
+            ['Color'] = Color3.fromRGB(244, 0, 0),
+            ['Radius'] = 200,
+            ['Thickness'] = 0.2
+        }
+    },
+    ['Miscellaneous'] = {
+        ['Resolver'] = {
+            ['Activated'] = false,
+            ['Notification'] = true
+        },
+        ['PredictionAdjuster'] = {
+            ['EnableAdjuster'] = true,
+            ['VelocityThreshold'] = 500
+        },
+        ['Checks'] = {
+            ['WallCheck'] = false,
+            ['Ko'] = true 
+        },
+        ['Turn'] = {
+            ['Degrees'] = 360,
+            ['Speed'] = 1299,
+            ['Smoothness'] = 1,
+            ['Direction'] = 'N',
+            ['Directions'] = {
+                ['N'] = 0,
+                ['E'] = 90,
+                ['S'] = 180,
+                ['W'] = 270
+            },
+        }
+    }
+}
+
+
+-- JAY X JAIRO
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/916cc34d2c8041320d5be0a28c9f257f.lua"))()
